@@ -7,8 +7,8 @@ require ('./dbase/db-config.php');
 require ('./include/common-function.php');
 require ('./include/db-function.php');
 
-//if (check_candidate($sql) == false)
-	//echo '<script language=javascript>window.location.replace("./index.php");</script>';
+if (check_candidate($sql) == false)
+	echo '<script language=javascript>window.location.replace("'.$_SERVER['REQUEST_URI'].'");</script>';
 
 if (isset($_SESSION['voters']) || isset($_SESSION['voted']) || isset($_SESSION['officelist']))
 	$_SESSION = array();
