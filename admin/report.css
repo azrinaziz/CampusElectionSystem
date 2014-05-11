@@ -3,6 +3,12 @@
 	margin: 0px;
 }
 
+h5 {
+	border-bottom: 2px solid #c1272f;
+	font-size: 12px;
+	margin: 8px;
+}
+
 p {
 	font-size: 12px;
 	margin: 8px;
@@ -22,7 +28,12 @@ table.listtable {
 	text-align: justify;
 }
 
+.bordertop {
+	border-top: 1px solid #c1272f;
+	border-bottom: 2px solid #c1272f;
+}
+
 .formtable {
-	width: 100%;
 	border-bottom: 4px solid #c1272f;
+	width: 100%;
 }
