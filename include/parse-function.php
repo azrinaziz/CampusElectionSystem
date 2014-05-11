@@ -23,6 +23,13 @@ function parse_leading($cand) {
 	}
 }
 
+function parse_mykad($id, $sql) {
+	$parsemykad = mysqli_fetch_array(mysqli_query($sql, "SELECT mykad FROM candidates WHERE id='$id'"), MYSQLI_NUM);
+	$mykad = $parsemykad[0];
+	unset($parsemykad);
+	return $mykad;
+}
+
 function parse_name($mykad, $sql) {
 	$parsename = mysqli_fetch_array(mysqli_query($sql, "SELECT fullname FROM votersdb WHERE mykad='$mykad'"), MYSQLI_NUM);
 	$name = $parsename[0];

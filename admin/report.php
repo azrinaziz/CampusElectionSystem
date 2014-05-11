@@ -13,13 +13,6 @@ if (isset($_GET['type'])) {
 		$page_title = 'Voted Student List';
 }
 
-function parse_mykad($id, $sql) {
-	$parsemykad = mysqli_fetch_array(mysqli_query($sql, "SELECT mykad FROM candidates WHERE id='$id'"), MYSQLI_NUM);
-	$mykad = $parsemykad[0];
-	unset($parsemykad);
-	return $mykad;
-}
-
 ?>
 <html>
 <head>
