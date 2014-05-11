@@ -1,0 +1,28 @@
+﻿html, body {
+    font-family: Verdana, Roboto, 'Lucida Grande', Arial, sans-serif;
+	margin: 0px;
+}
+
+p {
+	font-size: 12px;
+	margin: 8px;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+table.listtable {
+	text-align: center;
+	width: 100%;
+}
+
+.alignjustify {
+	text-align: justify;
+}
+
+.formtable {
+	width: 100%;
+	border-bottom: 4px solid #c1272f;
+}
