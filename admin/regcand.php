@@ -62,7 +62,7 @@ else {
 			
 							if ($result = mysqli_query($sql, 'SELECT * FROM office')) {
 								while ($row = mysqli_fetch_row($result))
-									echo '<p><input type="radio" name="office" value="', $row[0], '"/>', $row[1], '<br/></p>';
+									echo '<label><input type="radio" name="office" value="', $row[0], '"/>', $row[1], '</label><br/>';
 							}
 					
 			?>
