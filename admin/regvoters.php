@@ -50,9 +50,8 @@ if ($_SESSION['permissions'][3] == false && $_SESSION['permissions'][7] == false
 							<td><input class='textboxform' type='text' maxlength='100' name='fullname' size='50' placeholder='Full Name' tabindex='2' /></td>
 						</tr><tr>
 							<td>Task(s):</td>
-							<td><input type='checkbox' name='otpgen' value='otpgen' tabindex='3' checked />Generate OTP</td>
+							<td><label><input type='checkbox' name='otpgen' value='otpgen' tabindex='3' checked />Generate OTP</label></td>
 						</tr><tr>
-							
 							<td colspan='2'>* Indicates required field.</td>
 						</tr>
 					</table>
