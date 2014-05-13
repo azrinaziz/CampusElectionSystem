@@ -19,6 +19,8 @@ set_office_list($sql);
 					<tr>
 						<td><input class='logintextbox' type='number' maxlength='12' name='mykad' size='30' placeholder='MyKad Number' /></td>
 						<td><p><input class='loginbutton' type='submit' value='Generate' /></p></td>
+					</tr><tr>
+						<td colspan='2' style='text-align:center;'><label><input type='checkbox' name='slip' value='slip' />Print OTP slip</label></td>
 					</tr>
 				</table>
 			</form>

@@ -90,12 +90,12 @@ if (!isset($_GET['page']))
 						</tr><tr>
 							<td>Permission(s):</td>
 							<td><table class='formtable' cellspacing='0'><tr><td>
-								<input type='checkbox' name='permission[]' value='0' />Generate OTP<br/>
-								<input type='checkbox' name='permission[]' value='1' />Register Candidates<br/>
-								<input type='checkbox' name='permission[]' value='2' />Register Voters<br/></td><td>
-								<input type='checkbox' name='permission[]' value='3' checked />View Candidates List<br>
-								<input type='checkbox' name='permission[]' value='4' />View Voters List<br>
-								<input type='checkbox' name='permission[]' value='5' />Supervisor<br>
+								<label><input type='checkbox' name='permission[]' value='0' />Generate OTP</label><br/>
+								<label><input type='checkbox' name='permission[]' value='1' />Register Candidates</label><br/>
+								<label><input type='checkbox' name='permission[]' value='2' />Register Voters</label><br/></td><td>
+								<label><input type='checkbox' name='permission[]' value='3' checked />View Candidates List</label><br>
+								<label><input type='checkbox' name='permission[]' value='4' />View Voters List</label><br>
+								<label><input type='checkbox' name='permission[]' value='5' />Supervisor</label><br>
 							</td></tr></table></td>
 						</tr>
 					</table>
@@ -133,8 +133,8 @@ if (!isset($_GET['page']))
 							<td colspan='2'>Please select the report you want to generate:</td>
 						</tr><tr>
 							<td colspan='2'>
-								<input type='radio' name='report' value='votedvoters' />Voted voter's list<br/>
-								<input type='radio' name='report' value='electionwin' />Election results<br/>
+								<label><input type='radio' name='report' value='votedvoters' />Voted voter's list</label><br/>
+								<label><input type='radio' name='report' value='electionwin' />Election results</label><br/>
 							</td>
 						</tr>
 					</table>
