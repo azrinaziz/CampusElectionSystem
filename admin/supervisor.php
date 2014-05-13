@@ -57,7 +57,7 @@ if (!isset($_GET['page']))
 							}
 							echo '<tr>';
 							echo '<td>', $row[1], '</td>';
-							echo '<td align="left">', $row[2], '</td>';
+							echo '<td style="text-align:justify;">', $row[2], '</td>';
 							echo '<td>', $row[3], '</td>';
 							echo '<td>', $row[4], '</td>';
 							echo '<td>', $row[5], '</td>';

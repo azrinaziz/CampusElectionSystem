@@ -48,7 +48,7 @@ if (isset($_GET['type'])) {
 				$j = $i+1;
 				echo '<tr>';
 				echo "<td><p>$j</p></td>";
-				echo '<td class="alignjustify"><p>'.$voted[$i][0].'</p></td>';
+				echo '<td style="text-align:justify;"><p>'.$voted[$i][0].'</p></td>';
 				echo '<td><p>'.$voted[$i][1].'</p></td>';
 				echo '</tr>';
 				unset($j);
@@ -90,7 +90,7 @@ if (isset($_GET['type'])) {
 					$k = $j+1;
 					echo '<tr>';
 					echo "<td><p>$k</p></td>";
-					echo '<td class="alignjustify"><p>', $res[$j][1], '</p></td>';
+					echo '<td style="text-align:justify;"><p>', $res[$j][1], '</p></td>';
 					echo '<td><p>', parse_mykad($res[$j][0], $sql), '</p></td>';
 					echo '<td><p>', $res[$j][3], '</p></td>';
 					echo '<td><p>', count_percentage($res[$j][3], parse_total_votes($res)), '%</p></td>';

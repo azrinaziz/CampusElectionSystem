@@ -21,7 +21,7 @@ if ($_SESSION['permissions'][5] == false && $_SESSION['permissions'][7] == false
 						while ($row = mysqli_fetch_row($result)) {
 							echo '<tr>';
 							echo '<td>', $row[0], '</td>';
-							echo '<td align="left">', $row[1], '</td>';
+							echo '<td style="text-align:justify;">', $row[1], '</td>';
 							$otpcheck = mysqli_fetch_array(mysqli_query($sql, 'SELECT mykad FROM otp WHERE mykad="'.$row[0].'"'), MYSQLI_NUM);
 							if (!empty($otpcheck))
 								echo '<td>&#x2714</td>';

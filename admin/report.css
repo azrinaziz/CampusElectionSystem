@@ -24,10 +24,6 @@ table.listtable {
 	width: 100%;
 }
 
-.alignjustify {
-	text-align: justify;
-}
-
 .bordertop {
 	border-top: 1px solid #c1272f;
 	border-bottom: 2px solid #c1272f;
