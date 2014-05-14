@@ -1,7 +1,7 @@
 <?php
 
-function parse_admin_name($id, $sql) {
-	$parsename = mysqli_fetch_array(mysqli_query($sql, "SELECT fullname FROM usersprofile WHERE id='$id'"), MYSQLI_NUM);
+function parse_admin_name($mykad, $sql) {
+	$parsename = mysqli_fetch_array(mysqli_query($sql, "SELECT usersprofile.fullname FROM usersprofile INNER JOIN usersdb ON usersdb.id=usersprofile.id WHERE usersdb.mykad='$mykad'"), MYSQLI_NUM);
 	$name = $parsename[0];
 	unset($parsename);
 	return $name;
@@ -85,7 +85,7 @@ function parse_regvoters($count, $sql) {
 	else if ($count == 2)
 		$query = 'SELECT DISTINCT officeid FROM office';
 	else
-		return 'ERROR';
+		return false;
 
 	if ($count1 = mysqli_query($sql, $query)) {
 		while ($row = mysqli_fetch_row($count1))
