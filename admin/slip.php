@@ -6,7 +6,7 @@ require ('../include/parse-function.php');
 require ('../dbase/db-config.php');
 
 if (isset($_GET['mykad']) && isset($_GET['otp'])) {
-	//echo '<script language=javascript>window.print()</script>';
+	echo '<script language=javascript>window.print()</script>';
 	$page_title = $_GET['mykad'];
 }
 
