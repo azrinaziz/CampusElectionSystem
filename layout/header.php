@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title><?php echo $page_title; ?> | Campus Election System</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='site.css' rel='stylesheet' type='text/css' />
 </head>
 <body>

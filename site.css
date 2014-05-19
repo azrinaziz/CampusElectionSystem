@@ -1,6 +1,6 @@
 ﻿html, body {
 	background-color: #f3c108;
-    font-family: 'Segoe UI', Roboto, 'Lucida Grande', Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', Roboto, 'Lucida Grande', sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
@@ -105,11 +105,11 @@ table.tablelist th {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #c1272f), color-stop(100%, #c1272f));
 	background-color: #c1272f;
 	border: 1px solid #c1272f;
-	border-radius:10px;
+	border-radius: 10px;
 	color: white;
 	display: inline-block;
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#c1272f', endColorstr='#c1272f');
-	font-family: 'Segoe UI', Roboto, 'Lucida Grande', Arial, sans-serif;
+	font-family: 'Open Sans', 'Segoe UI', Roboto, 'Lucida Grande', sans-serif;
 	font-size: 16px;
 	padding: 15px 35px;
 	text-decoration: none;
