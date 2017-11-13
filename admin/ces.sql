@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `usersdb` (
 	UNIQUE KEY `mykad` (`mykad`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=2;
 
-INSERT INTO `usersdb` (`id`, `mykad`, `password`, `salt`) VALUES (1, '921110126605', '$2y$09$nz1uyigov87jq6wlmk9rhuck8w3puQfVp8SmBwXvyoRlcnmre5JFa', '$2y$09$nz1uyigov87jq6wlmk9rh3');
+INSERT INTO `usersdb` (`id`, `mykad`, `password`, `salt`) VALUES (1, '950321125505', '$2y$09$6jmkqyozthv1li25g7n08ehy4t8N5.EwRv035vrdmjF06AOX8DZl.', '$2y$09$6jmkqyozthv1li25g7n08p');
 
 CREATE TABLE IF NOT EXISTS `usersprofile` (
 	`id` smallint(4) NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `usersprofile` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `usersprofile` (`id`, `fullname`) VALUES (1, 'AZRIN AZIZ BIN ABDUL KARIM');
+INSERT INTO `usersprofile` (`id`, `fullname`) VALUES (1, 'JOHN SMITH');
 
 CREATE TABLE IF NOT EXISTS `votersdb` (
 	`mykad` varchar(12) NOT NULL,
